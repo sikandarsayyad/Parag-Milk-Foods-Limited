@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", serif;
+     font-optical-sizing: auto;
+  
+
+}
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
+}
+.summary{
+    width: 65%;
+    height: 100%;
+    background-color: hsl(0, 20%, 94%);
+    border-radius: 30px 0 0 30px;
+    padding: 2%;
+    
+}
+.product{
+    width: 100%;
+    height: 60%;
+}
+.product .prod{
+    height: 32%;
+    width: 100%;
+    display: flex;
+}
+.product .prod .data{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    
+}
+.product .prod .data img{
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 30%;
+    height: 100px;
+    border-radius: 5px;
+
+}
+.product .prod .data div{
+
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 0;
+}
+
+.product .prod p{
+    font-weight: 500;
+    opacity: 0.4;
+    padding: 0;
+    margin: 0;
+}
+.product .prod .value{
+    width: 50%;
+    text-align: right;
+}
+.amount{
+    width: 100%;
+    height: 30%;
+    /* background-color: aqua; */
+}
+.amount .couponbtn{
+    height: 20%;
+    width: 100%;
+    /* background-color: cadetblue; */
+}
+.amount .couponbtn input{
+    width: 60%;
+    height: 90%;
+    border-radius: 5px;
+    padding:0 10px;
+}
+.amount .couponbtn button{
+    width: 30%;
+    background-color: black;
+    color: aliceblue;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.amount .result{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+.amount .result .sum{
+    width: 50%;
+    height: 100%;
+    /* background-color: beige; */
+}
+.amount .result .two{
+    /* background-color: rgb(95, 160, 105); */
+    text-align: right;
+}
+.amount .result p{
+    opacity: 0.5;
+}
+
+.contactForm{
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    /* border: 1px solid blue; */
+    border-radius: 0 30px 30px 0;
+    padding: 2%;
+}
+.contactForm h2{
+    margin-left: 10%;
+}
+
+.contactForm form{
+    width: 80%;
+    margin: auto;
+}
+.contactForm input{
+    width: 100%;
+    /* height: 30px; */
+    padding: 5px;
+    margin: 2% 0;
+    border-radius: 5px;
+    padding-left:  10px;
+    background-color: hsl(0, 20%, 94%);
+}
+.contactForm form button{
+    width: 103%;
+    /* height: 50px; */
+    background-color: black;
+    color: aliceblue;
+    margin: 2% auto;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product button{
+    cursor: pointer;
+    width: 20%;
+    padding: 5px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .container{
+        display: inline-block;
+        position: relative;
+        background-color: none;
+        padding: 50px; 
+        height: auto;
+        margin: auto;
+        box-shadow: none;
+        
+    }
+    .summary{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       
+    }
+    .contactForm{
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding-bottom: 50px;
+    }
+    .product .prod{
+        margin-bottom: 10px;
+    }
+    .amount .couponbtn input{
+        padding: 5px;
+    }
+    .amount .couponbtn button{
+        font-size: 50%;
+    }
+  }
+  
